@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sammy's Mindchrips tailwind-css</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind-css</title>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- logo image -->
+    <link rel="icon" href="images/logo.png">
+    <style>
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: rgb(255, 174, 0);
+            color: rgb(14, 7, 7);
+            cursor: pointer;
+            padding: 12px 22px;
+            border-radius: 4px;
+        }
+        
+        #myBtn:hover {
+            background-color: #555;
+        }
+        
+        ul.mb-1.list-unstyled li:before {
+            font-family: 'FontAwesome';
+            content: '\f00c';
+            color: #736e6edb;
+        }
+        
+        .pl-7 .ps-0:hover {
+            text-decoration: underline;
+        }
+        
+        .card-body .ps-0 a:hover {
+            text-decoration: underline;
+        }
+        
+        .m-3 ul li a {
+            text-decoration: none;
+        }
+        
+        .m-3 ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        .icon-hover {
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        
+        .icon-hover:hover {
+            color: white;
+            transform: scale(1.3);
+            /* enlarge */
+        }
+    </style>
+</head>
+
+<body class="bg-[url('background1.jpg')]">
+    <!-- Navbar -->
+
+    <header class="w-full relative overflow-auto m-0 " style="background-color: #1e525b;">
+        <nav class=" flex p-2 justify-between items-center p-3 lg:justify-start">
+            <div><img class="lg:w-20 w-16" src="images/logo2.PNG" alt="logo"></div>
+            <div class="lg:mt-5"><a href="#" class="mt-6 pl-2 no-underline text-2xl lg:text-4xl md:font-bold font-extrabold" style="font-family: 'Satisfy', cursive; color: #c2f2fc;"> Sammy's MindChirps</a></div>
+            <div><button type="button" class="lg:hidden border p-3 rounded" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-list d-lg-none" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+             </svg>
+          </button></div>
+        </nav>
+    </header>
+    <!-- Section -->
+    <section class="mt-5">
+
+        <div class="flex flex-wrap md:flex-nowrap md:gap-5">
+            <div class="hidden  md:block lg:w-1/4"></div>
+            <div class="w-full lg:m-2 mx-5 md: mx-0 lg:w-2/4 flex flex-col gap-5">
+
+                <!-- card-1 -->
+                <div class="rounded-xl bg-[url('background2.jpg')]">
+                    <div class=" rounded-3xl bg-[url('background2.jpg')]">
+                        <div class="rounded-t-xl">
+                            <div class="fw-bold p-3 px-5 rounded-t-xl " style="background-color:  #1e525b; font-size:28px;font-weight: bold; color: #c2f2ff;">Review of the movie Lover directed by Prabhuram Vyas</div>
+                        </div>
+                        <div class="card-body flex flex-wrap p-4 ">
+                            <div class="w-full lg:w-1/4 ">
+                                <center><img src="images/Lover.jpg" alt="sample-website-img1"></center>
+                            </div>
+                            <div class="w-full lg:w-3/4 ">
+                                <p class="text-base lg:text-lg  font-normal mb-3 text-justify pl-2">Love is an emotion that has always intrigued me. It is loaded with lot of contrarian feelings- you need the person you love to be possessive about you yet need your space; you need that person to respect your thoughts and
+                                    let you do things on your course yet you want that person to offer their unsolicited views, and I could go on and on about how this universal feeling called "LOVE" is so unfathomable. Perhaps, this is why, no matter
+                                    how many movies are done around the central theme of love, new ones with fresh perspective like "Lover" still is celebrated by the audience.</p>
+                                <strong class="p-0 text-black">...[Continue Reading...]</strong>
+                            </div>
+                        </div>
+                        <div class="card-footer border-t-2 bg-slate-500">
+                            <div class="card-footer-wrap bg-slate-100">
+                                <button class="button float-end p-2 my-3 mr-3 rounded text-white text-sm" style="background-color: #5A6268;"><span>Movie Reviews</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="rounded-xl bg-[url('background2.jpg')]">
+                    <div class=" rounded-3xl bg-[url('background2.jpg')]">
+                        <div class="rounded-t-xl">
+                            <div class="fw-bold p-3 px-5 rounded-t-xl " style="background-color:  #1e525b; font-size:28px;font-weight: bold; color: #c2f2ff;">Review of the Tamil movie Por Thozhil directed by Vignesh Raja</div>
+                        </div>
+                        <div class="card-body flex flex-wrap p-4">
+                            <div class="w-full lg:w-1/4">
+                                <center><img src="images/por thozil.jpg" alt="por" class="mr-4"></center>
+                            </div>
+                            <div class="w-full lg:w-3/4 ">
+                                <p class="text-base lg:text-lg  font-normal mb-3 text-justify pl-2">Vignesh Raja's debut movie Por Thozhil revolves around the story where 2 cops are on a mission to hunt down a serial killer. This is a stereotypical theme, which Kollywood audience are used to from the days of Sigappu Rojakkal
+                                    but the director has navigated through the plot with rich twists and tight screenplay, maintaining the suspense all through the movie.</p>
+                                <strong class="p-0 text-black">...[Continue Reading...]</strong>
+                            </div>
+                        </div>
+                        <div class="card-footer border-t-2 bg-slate-500">
+                            <div class="card-footer-wrap bg-slate-100">
+                                <button class="button float-end p-2 my-3 mr-3 rounded text-white text-sm" style="background-color: #5A6268;"><span>Movie Reviews</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card-3 -->
+                <div class="rounded-xl bg-[url('background2.jpg')]">
+                    <div class=" rounded-3xl bg-[url('background2.jpg')]">
+                        <div class="rounded-t-xl">
+                            <div class="fw-bold p-3 px-5 rounded-t-xl " style="background-color:  #1e525b; font-size:28px;font-weight: bold; color: #c2f2ff;">Review of movie Archana 31 Not Out by Akhil Anil Kumar</div>
+                        </div>
+                        <div class="card-body flex flex-wrap p-4">
+                            <div class="w-full lg:w-1/4">
+                                <center><img src="images/archana.jpeg" alt="archana" class="mr-4"></center>
+                            </div>
+                            <div class="w-full lg:w-3/4 ">
+                                <p class="text-base lg:text-lg  font-normal mb-3 text-justify pl-2">'Woman+ Unmarried+ Approaching one's 30s' is a perfect combination that would invite unabated sympathies and advise from one's friends(married) and family. Archana 31 Not Out portrays the life of one such woman, Archana(played
+                                    by Aishwarya Lekshmi), who struggles to find the right groom for her. And when she eventually thinks she has found one, a twist awaits her.</p>
+                                <strong class="p-0 text-black">...[Continue Reading...]</strong>
+                            </div>
+                        </div>
+                        <div class="card-footer border-t-2 bg-slate-500">
+                            <div class="card-footer-wrap bg-slate-100">
+                                <button class="button float-end p-2 my-3 mr-3 rounded text-white text-sm" style="background-color: #5A6268;"><span>Movie Reviews</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card-4 -->
+                <div class="rounded-xl bg-[url('background2.jpg')]">
+                    <div class=" rounded-3xl bg-[url('background2.jpg')]">
+                        <div class="rounded-t-xl">
+                            <div class="fw-bold p-3 px-5 rounded-t-xl " style="background-color:  #1e525b; font-size:28px;font-weight: bold; color: #c2f2ff;">Review of the book Sailing through a storm- Making crisis work for you written by T N Hari and Sanjay Swami</div>
+                        </div>
+                        <div class="card-body flex flex-wrap p-4">
+                            <div class="w-full lg:w-1/4">
+                                <center><img src="images/sanjay.jpeg" alt="sample-website-img1" class="mr-4"></center>
+                            </div>
+                            <div class="w-full lg:w-3/4 ">
+                                <p class="text-base lg:text-lg  font-normal mb-3 text-justify pl-2">None likes facing crisis in life but we all know that it is inevitable though it's form and severity may vary. Some crisis could impact self while some like Covid 19 could impact people at large. Darwin's theory of evolution
+                                    talks about survival of the fittest, which emphasizes on the adaptability to the adverse situations as a quintessential quality to live to see another day. This theory is very much and all the more relevant in present
+                                    scenario given the VUCA (volatile, uncertain, complex and ambiguous) nature of the world. But what are the essential qualities, you may wonder. Thanks to the authors T N Hari and Sanjay Swami</p>
+                                <strong class="p-0 text-black">...[Continue Reading...]</strong>
+                            </div>
+                        </div>
+                        <div class="card-footer border-t-2 bg-slate-500">
+                            <div class="card-footer-wrap bg-slate-100">
+                                <button class="button float-end p-2 my-3 mr-3 rounded text-white text-sm" style="background-color: #5A6268;"><span>Movie Reviews</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card-5 -->
+                <div class="rounded-xl bg-[url('background2.jpg')]">
+                    <div class=" rounded-3xl bg-[url('background2.jpg')]">
+                        <div class="rounded-t-xl">
+                            <div class="fw-bold p-3 px-5 rounded-t-xl " style="background-color:  #1e525b; font-size:28px;font-weight: bold; color: #c2f2ff;">Gautam Vasudev Menon and Relationships- An analysis of Vinnaithandi Varuvaya</div>
+                        </div>
+                        <div class="card-body flex flex-wrap p-4">
+                            <div class="w-full lg:w-1/4">
+                                <center><img src="images/vtv.jpeg" alt="sample-website-img1" class="mr-4"></center>
+                            </div>
+                            <div class="w-full lg:w-3/4 ">
+                                <p class="text-base lg:text-lg  font-normal mb-3 text-justify pl-2">Take any relationship- be it between a parent and one's kids, that with one's friends, or colleagues etc., Any contact between two humans has got lot of intricacies and nuances. But nothing can beat the complexity more
+                                    than a relationship that blossoms between a man and a woman who intends to share their life with each other.</p>
+                                <strong class="p-0 text-black">...[Continue Reading...]</strong>
+                            </div>
+                        </div>
+                        <div class="card-footer border-t-2 bg-slate-500">
+                            <div class="card-footer-wrap bg-slate-100">
+                                <button class="button float-end p-2 my-3 mr-3 rounded text-white text-sm" style="background-color: #5A6268;"><span>Movie Reviews</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card-6 -->
+                <div class=" rounded-3xl bg-[url('background2.jpg')]">
+                    <div class="rounded-t-xl">
+                        <div class="fw-bold p-3 px-5 rounded-t-xl " style="background-color:  #1e525b; font-size:28px;font-weight: bold; color: #c2f2ff;">Review of the Tamil movie Nitham Oru Vanam by Ra Karthik</div>
+                    </div>
+                    <div class="card-body flex flex-wrap p-4">
+                        <div class="w-full lg:w-1/4">
+                            <center><img src="images/nitham.jpeg" alt="sample-website-img1" class="mr-4"></center>
+                        </div>
+                        <div class="w-full lg:w-3/4 ">
+                            <p class="text-base lg:text-lg  font-normal mb-3 text-justify pl-2">The movie's storyline is very straight forward: How travel can change one's outlook about life. Of late, in Kollywood cinema, this pattern can be seen where there is a depressed person(men, mostly) who would climb on their
+                                Royal Enfield bike and then set off to the Himalayan mountains; when they return, they become a refined soul. So, is this movie any different from the stereotypical portrayal?! Ah, you can't get to the verdict right in
+                                the first paragraph :D</p>
+                            <strong class="p-0 text-black">...[Continue Reading...]</strong>
+                        </div>
+                    </div>
+                    <div class="card-footer border-t-2 bg-slate-500">
+                        <div class="card-footer-wrap bg-slate-100">
+                            <button class="button float-end p-2 my-3 mr-3 rounded text-white text-sm" style="background-color: #5A6268;"><span>Movie Reviews</span></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-7 -->
+                <div class=" rounded-3xl bg-[url('background2.jpg')]">
+                    <div class="rounded-t-xl">
+                        <div class="fw-bold p-3 px-5 rounded-t-xl " style="background-color:  #1e525b; font-size:28px;font-weight: bold; color: #c2f2ff;">Book Review of Row, Row, Row your Boat - 50 Simple Little Things to Navigate the Modern Indian Marriage by Sophia Philips and Roopak Nedumpilly</div>
+                    </div>
+                    <div class="card-body flex flex-wrap p-4">
+                        <div class="w-full lg:w-1/4">
+                            <center><img src="images/row.jpeg" alt="sample-website-img1" class="mr-4"></center>
+                        </div>
+                        <div class="w-full lg:w-3/4 ">
+                            <p class="text-base lg:text-lg  font-normal mb-3 text-justify pl-2">It's a common saying which goes like 'Marriages are made in Heaven'; but we all know that the couple should still lead their lives on (beautiful yet complicated) Earth!! All of us want and yearn for a happy, peaceful, fun filled
+                                and satisfying married life and a partner who would support, defend, and handhold us in this journey. But very rarely do we come across couples who have achieved this stature. This book 'Row, Row, Row your Boat' is a book
+                                written by couple therapists, Sophia and Roopak(a couple themselves!!), who turned around their married life which was on the verge of collapse with therapy's help. This is a short but insightful read on little things that
+                                couples could do 'together' to reach their vision of becoming a made-for-each-other couple, which apparently was their original vow when they got married but may have fizzled out as years passed by.</p>
+                            <strong class="p-0 text-black">...[Continue Reading...]</strong>
+                        </div>
+                    </div>
+                    <div class="card-footer border-t-2 bg-slate-500">
+                        <div class="card-footer-wrap bg-slate-100">
+                            <button class="button float-end p-2 my-3 mr-3 rounded  text-white text-sm" style="background-color: #5A6268;"><span>Movie Reviews</span></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-8 -->
+                <div class="rounded-xl bg-[url('background2.jpg')]">
+                    <div class=" rounded-3xl bg-[url('background2.jpg')]">
+                        <div class="rounded-t-xl">
+                            <div class="fw-bold p-3 px-5 rounded-t-xl " style="background-color:  #1e525b; font-size:28px;font-weight: bold; color: #c2f2ff;">Book Review of The Moral Compass: Finding Balance and Purpose in an Imperfect World by Hardayal Singh</div>
+                        </div>
+                        <div class="card-body flex flex-wrap p-4">
+                            <div class="w-full lg:w-1/4">
+                                <center><img src="images/moral.jpeg" alt="sample-website-img1" class="mr-4"></center>
+                            </div>
+                            <div class="w-full lg:w-3/4 ">
+                                <p class="text-base lg:text-lg  font-normal mb-3 text-justify pl-2">Let's assume this situation. You are working in a reputed organization and your appraisal is underway. You have high hopes of getting a sizeable increment with a promotion to a leadership role. All of a sudden, your manager
+                                    invites you into his room and asks you to poach some information to a competitor firm for some illegal commission. Would you be okay doing this so that your appraisal sails through, which will also keep you in your
+                                    manager's good books or would you back off as you would be hurting the organization for illegal short term again. This is just an example of one of plethora of daily dilemmas that life throws at you with varying complexities.
+                                    This book by Hardayal Singh, a civil service Officer, attempts to highlight through fictional and real stories of common men, that choosing and walking along the righteous path with an unwavering mind is possible but
+                                    acknowledges that it is extremely difficult.</p>
+                                <strong class="p-0 text-black">...[Continue Reading...]</strong>
+                            </div>
+                        </div>
+                        <div class="card-footer border-t-2 bg-slate-500">
+                            <div class="card-footer-wrap bg-slate-100">
+                                <button class="button float-end p-2 my-3 mr-3 rounded  text-white text-sm" style="background-color: #5A6268;"><span>Movie Reviews</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- side-1 -->
+            <div class="w-full lg:w-1/4 m-2">
+                <div class="rounded-xl bg-[url('background2.jpg')]">
+                    <div class="rounded-t-lg p-2" style="background-color: #1e525b; color: #c2f2ff;">
+                        <h4 class="p-1 font-bold text-xl">Newsletter</h4>
+                    </div>
+                    <div class="card-body p-1 lg:p-5">
+                        <input type="text" id="default-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Enter email">
+                        <center>
+                            <button class="bg-blue-500 text-white p-1 px-2 mt-3 mb-5 md:mt-5 md:mb-7 rounded">Subscribe</button>
+                        </center>
+                    </div>
+                </div>
+                <!-- side-2 -->
+                <div class="rounded-xl bg-[url('background2.jpg')] my-4">
+                    <div class="rounded-t-lg p-2 " style="color: #c2f2ff; background-color: #1e525b;">
+                        <h5 class="p-1 font-bold text-xl">About Sammy's MindChirps</h5>
+                    </div>
+                    <div class="card-body text-lg font-normal m-3 p-3" style="color: #1e525b; line-height: 28px;text-align: justify;">
+                        <p>Hello! Welcome to Sammy's MindChirps. I'm glad you are here. To me, the word LIFE is an acronym of Laboratory with Infinite Freedom to Experiment. It's more like a kaleidoscope offering amazing learning opportunities as we grow
+                            and explore various facets of life. So this blog is a platform where I share anything that I find interesting (with my two cents, of course :D). I assure that you will have some new learning when you exit the blog. And do share
+                            your feeback on the blog or anything you want me to write about in this blog by dropping an email to mindchirps@gmail.com</p>
+                    </div>
+                </div>
+                <!-- side-3 -->
+                <div class="rounded-xl bg-[url('background2.jpg')] my-4">
+                    <div class="rounded-t-lg p-2 " style="color: #c2f2ff; background-color: #1e525b;">
+                        <h5 class="p-1 font-bold text-xl">Categories</h5>
+                    </div>
+                    <div class="card-body Categories p-4">
+                        <div class="ps-0">
+                            <div class="ps-0 text-gray-600 text-lg font-bold"><i class="fa fa-play p-2" aria-hidden="true"></i><a class="text-zinc-500" href="#">Book Reviews</a><span class="bg-slate-500 text-white ml-3 p-1 py-0 text-sm rounded">16</span></div>
+                            <div>
+                                <ul class="pl-7 pb-1  text-base text-zinc-500 font-bold">
+                                    <li class="ps-0"><i class="fa-solid fa-check"></i><a class="p-2" href="#">Self help</a><span class="bg-slate-500 text-white ml-2 p-1 py-0 text-sm rounded">3</span></li>
+                                    <li class="ps-0"><i class="fa-solid fa-check"></i><a class="p-2" href="#">Psychology</a><span class="bg-slate-500 text-white ml-2 p-1 py-0 text-sm rounded">3</span></li>
+                                    <li class="ps-0"><i class="fa-solid fa-check"></i><a class="p-2" href="#">Psychology</a><span class="bg-slate-500 text-white ml-2 p-1 py-0 text-sm rounded">1</span></li>
+                                    <li class="ps-0"><i class="fa-solid fa-check"></i><a class="p-2" href="#">Drama</a><span class="bg-slate-500 text-white ml-2 p-1 py-0 text-sm rounded">0</span></li>
+                                    <li class="ps-0"><i class="fa-solid fa-check"></i><a class="p-2" href="#">Science</a><span class="bg-slate-500 text-white ml-2 p-1 py-0 text-sm rounded">8</span></li>
+                                    <li class="ps-0"><i class="fa-solid fa-check"></i><a class="p-2" href="#">Non-fiction</a><span class="bg-slate-500 text-white ml-2 p-1 py-0 text-sm rounded">1</span></li>
+                                    <li class="ps-0"><i class="fa-solid fa-check"></i><a class="p-2" href="#">Technology</a><span class="bg-slate-500 text-white ml-2 p-1 py-0 text-sm rounded">0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ps-0  text-base font-bold text-zinc-500"><i class="fa fa-play p-2" aria-hidden="true"></i><a class="fw-bold h5" href="#">Movie Reviews</a><span class="bg-slate-500 text-white ml-2 p-1 py-0 text-sm rounded">18</span></div>
+                        <div class="ps-0  text-base font-bold text-zinc-500"><i class="fa fa-play p-2" aria-hidden="true"></i><a class="no-underline fw-bold h5" href="#">My Experiences</a><span class="bg-slate-500 text-white ml-2 p-1 py-0 text-sm rounded">1</span></div>
+                        <div class="ps-0  text-base font-bold text-zinc-500"><i class="fa fa-play p-2" aria-hidden="true"></i><a class="no-underline fw-bold h5" href="#">Interesting Fact</a><span class="bg-slate-500 text-white ml-2 p-1 py-0 text-sm rounded">1</span></div>
+                        <div class="ps-0  text-base font-bold text-zinc-500"><i class="fa fa-play p-2" aria-hidden="true"></i><a class="no-underline fw-bold h5" href="#">TV Serial Review</a><span class="bg-slate-500 text-white ml-2 p-1 py-0 text-sm rounded">1</span></div>
+                        <div class="ps-0  text-base font-bold text-zinc-500"><i class="fa fa-play p-2" aria-hidden="true"></i><a class="no-underline fw-bold h5" href="#">Book Excerpts</a><span class="bg-slate-500 text-white ml-2 p-1 py-0 text-sm rounded">3</span></div>
+                    </div>
+                </div>
+                <!-- side-4 -->
+                <div class="rounded-xl bg-[url('background2.jpg')] my-4">
+                    <div class="rounded-t-lg p-2 " style="color: #c2f2ff; background-color: #1e525b;">
+                        <h5 class="p-1 font-bold text-xl">Tags</h5>
+                    </div>
+                    <div class="card-body m-3 flex flex-row">
+                        <ul class="list-inside list-disc  text-base font-bold pb-4" style="color: #195688;">
+
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">Legal</a></li>
+                            <li><a href="#">Animals</a></li>
+                            <li><a href="#">Web Designing</a></li>
+                            <li><a href="#">Thriller</a></li>
+                            <li><a href="#">Self-Help-Book</a></li>
+                        </ul>
+                        <ul class="list-disc list-inside  text-base font-bold " style="color: #195688;">
+                            <li><a href="#">Science</a></li>
+                            <li><a href="#">Drama</a></li>
+                            <ul class="p-2 list-disc list-inside  text-base font-bold " style="color: #195688;">
+                                <li><a href="#">Yoga</a></li>
+                                <li><a href="#">Non-fiction</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- pagination -->
+        <div class="flex justify-center my-2">
+
+            <nav aria-label="Page navigation example">
+                <ul class="inline-flex -space-x-px text-sm">
+                    <li>
+                        <a href="#" class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-700 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white ">
+                            <</a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-blue-600 bg-blue-500 border border-gray-300 hover:bg-blue-500 hover:text-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-500 hover:text-white text-white">1</a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-blue-600 bg-white border border-gray-300 hover:bg-blue-600 hover:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 hover:text-white">2</a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-blue-600 bg-white border border-gray-300 hover:bg-blue-600 hover:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 hover:text-white">3</a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-blue-600 bg-white border border-gray-300 hover:bg-blue-600 hover:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 hover:text-white">4</a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-blue-600 bg-white border border-gray-300 hover:bg-blue-600  hover:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 hover:text-white">5</a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">></a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </section>
+    <footer class="text-white" style="background-color: #1e525b;">
+        <div class="mt-8 p-4 text-center">
+            <div class="list-unstyled mt-50">
+                <ul class="flex flex-row text-white m-5 justify-center pt-20">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f p-3 text-2xl icon-hover"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter p-3 text-2xl icon-hover"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram p-3 text-2xl icon-hover"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google-plus-g p-3 text-2xl icon-hover"></i></a></li>
+                </ul>
+            </div>
+            <div class="text-lg pt-5">© All rights reserved by Sammy's MindChirps</div>
+            <div class="text-sm my-2">Logo credits: Deepak Kumar A</div>
+            <div class="text-sm my-2">Developed and Hosted by 8Queens</div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
